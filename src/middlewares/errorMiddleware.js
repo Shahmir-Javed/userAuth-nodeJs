@@ -1,6 +1,9 @@
 export const errorHandler = (err, req, res, next) => {
+
+   
+    
     const status = err.status || 500;
-    const message = err.message || 'Server Error';
+    const message = 'Server Error Shahmir Bro';
     if (process.env.NODE_ENV === 'development') {
         console.error(err.stack);
     }
